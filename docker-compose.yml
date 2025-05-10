@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    ### Note remember the structure is outside port : inside port aka listener
+    ports:
+      - "3000:5000"
